@@ -42,21 +42,6 @@
 \item Unit testing, integration testing, continuous integration.
 \end{itemize}
 \item Operating systems: Linux (Debian).
-\item Relevant, but rusty (and/or shallow) experience:
-Bigtable,
-LXC,
-KVM,
-Linux kernel space programming,
-dpkg,
-apt,
-C,
-SQL,
-LDAP,
-TFTP,
-PXE,
-NFS,
-iptables,
-subversion.
 \end{itemize}
 }
 \cvitem{Social}{
@@ -106,7 +91,7 @@ of new services
 \end{itemize}
 \item SRE onboarded two services:
 \begin{itemize}
-\item the Google \href{https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44860.pdf}{device inventory},
+\item the Google \href{https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44860.pdf}{device inventory} using Bigtable,
 \item the service mananging all of Google's network level ACLs.
 \end{itemize}
 \item Mentored multiple new team members and hosted two
@@ -152,14 +137,16 @@ Management of customer relations, providing consulting services and support.
 A customized debian system fully parameterized with a
 system wide configuration tree with intra-referencing and overlay
 capabilities. The default key database contained over 6400 keys at
-the end of 2011.
+the end of 2011. We were maintaining our own debian repository
+containing our software.
 \item
-A thin client system supporting audio,
+A netbooted thin client system supporting audio,
 encryption, USB key authentication and session detachement.
 \item
 A suite of Linux services babysitting networks of
 Microsoft Windows workstations, supporting the whole lifecycle starting from
 a diskless installation.
+\item A VM management system supporting KVM and LXC guests.
 \item
 Design, implementation and deployment of a complete solution for offline
 vehicle tracking including gps logging, fuel level monitoring and
