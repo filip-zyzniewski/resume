@@ -25,9 +25,10 @@
 \item Site Reliability Engineering
 \begin{itemize}
 \item Responsible for services handling 0.6MQPS, >100TB of data.
+\item Responsible for services processing cardholder data.
 \item Oncall with a 5 minute reponse SLO.
 \item Cloud deployments
-(\href{https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/}{borg}).
+(GCP, Kubernetes, \href{https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/}{borg}).
 \item Monitoring and alerting.
 \item Continuous deployment.
 \item Change management.
@@ -39,7 +40,7 @@
 \item Software development
 \begin{itemize}
 \item Languages: Go, Python, Bourne shell.
-\item Version control: Perforce, git.
+\item Version control: git, Perforce.
 \item Unit testing, integration testing, continuous integration.
 \end{itemize}
 \item Operating systems: Linux (Debian).
@@ -48,7 +49,7 @@
 \cvitem{Social}{
 Working in a team (contributing, leadership, mentoring),
 establishing and maintaining good relationships with stakeholders across teams
-(communication, negotiation), public speaking.
+(communication, negotiation), working in fully remote positions, public speaking.
 }
 \cvitem{Organizational}{
 Planning and execution of strategies,
@@ -59,7 +60,29 @@ running a small business.
 \newpage
 
 \section{Experience}
-\cventry{2014--now}{Site Reliability Engineer}{Google}{Dublin}{}{
+\cventry{2019--now}{DevOps Engineer}{\href{https://www.fexco.com/}{Fexco}}{Killorglin, Ireland (remotely)}{}{
+Member of the Hospitality solution DevOps team \newline{}
+\textbf{Responsibilities}:
+\begin{itemize}
+\item Development and maintenance of the
+\href{https://fexco.com/openconnect/hospitality/}{Hospitality solution}
+cloud infrastructure.
+\item Running the components of the solution (oncall, onduty, releases, deployments).
+\item Mentoring on good Site Reliability Engineering practices.
+\end{itemize}
+\textbf{Achievements}:
+\begin{itemize}
+\item Automated publication of the build artifacts.
+\item Designed and implemented a Terraform module that can perform a full
+environment creation and subsequent deployments without any manual steps.
+\item Built the infrastructure of the Merchant Portal - QA, UAT and production environments.
+\item Implemented a fully instrumented Firestore exports job (Golang).
+\item Designed and implemented an automatic Point in Time Recovery procedure (Firestore, Spanner).
+\item Establishing best practices: design documents, observability, instrumentation, SLOs.
+\item Successfully working and collaborating in a fully remote position.
+\end{itemize}
+}
+\cventry{2014--2019}{Site Reliability Engineer}{\href{https://www.google.com/}{Google}}{Dublin}{}{
 Member of the Access SRE team \newline{}
 \textbf{Responsibilities}:
 \begin{itemize}
@@ -123,7 +146,7 @@ Shut down an old generation of the BeyondCorp
 infrastructure decommission).
 \end{itemize}
 }
-\cventry{2012--2013}{Senior Software Performance Engineer}{Sabre Holdings}{Kraków}{}{
+\cventry{2012--2013}{Senior Software Performance Engineer}{\href{https://www.sabre.com}{Sabre Holdings}}{Kraków}{}{
 Member of the pLab team \newline{}
 \textbf{Responsibilities}:
 \begin{itemize}
@@ -197,7 +220,7 @@ Department of Mathematics (one term).
 
 \section{Languages}
 \cvitemwithcomment{English}{C1 - Proficient}{
-I have been working for US based corporations for the last 7 years.}
+I have been working for companies based in the USA and Ireland for the last 8 years.}
 \cvitemwithcomment{Polish}{C2 - Proficient}{My native tongue.}
 
 \end{document}
