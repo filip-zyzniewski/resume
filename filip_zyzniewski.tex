@@ -17,210 +17,218 @@
 
 \begin{document}
 
-\makecvtitle
+  \makecvtitle
 
-\section{Key competences}
-\cvitem{Technical}{
-\begin{itemize}
-\item Site Reliability Engineering
-\begin{itemize}
-\item Responsible for services handling 0.6 million QPS, >100TB of data.
-\item Responsible for services processing cardholder data.
-\item Oncall with a 5 minute response SLO.
-\item Cloud deployments
-(GCP, Kubernetes, \href{https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/}{borg}).
-\item Monitoring and alerting.
-\item Continuous deployment.
-\item Change management.
-\item Performance engineering.
-\item Load balancing.
-\item Capacity planning.
-\item Data integrity: replication, redundancy, backups.
-\end{itemize}
-\item Software development
-\begin{itemize}
-\item Languages: Go, Python, Bourne shell.
-\item Version control: Git, Perforce.
-\item Unit testing, integration testing, continuous integration.
-\end{itemize}
-\item Operating systems: Linux (Debian).
-\end{itemize}
-}
-\cvitem{Social}{
-Working in a team (contributing, leadership, mentoring),
-establishing and maintaining good relationships with stakeholders across teams
-(communication, negotiation), working in fully remote positions, public speaking.
-}
-\cvitem{Organizational}{
-Planning and execution of strategies,
-software product lifecycle management,
-running a small business.
-}
+  \section{Key competences}
 
-\newpage
+    \cvitem{Technical}{
+    \begin{itemize}
+    \item Site Reliability Engineering
+    \begin{itemize}
+    \item Responsible for services handling 0.6 million QPS, >100TB of data.
+    \item Responsible for services processing cardholder data.
+    \item Oncall with a 5 minute response SLO.
+    \item Cloud deployments
+    (GCP, Kubernetes, \href{https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/}{borg}).
+    \item Monitoring and alerting.
+    \item Continuous deployment.
+    \item Change management.
+    \item Performance engineering.
+    \item Load balancing.
+    \item Capacity planning.
+    \item Data integrity: replication, redundancy, backups.
+    \end{itemize}
+    \item Software development
+    \begin{itemize}
+    \item Languages: Go, Python, Bourne shell.
+    \item Version control: Git, Perforce.
+    \item Unit testing, integration testing, continuous integration.
+    \end{itemize}
+    \item Operating systems: Linux (Debian).
+    \end{itemize}
+    }
+    \cvitem{Social}{
+    Working in a team (contributing, leadership, mentoring),
+    establishing and maintaining good relationships with stakeholders across teams
+    (communication, negotiation), working in fully remote positions, public speaking.
+    }
+    \cvitem{Organizational}{
+    Planning and execution of strategies,
+    software product lifecycle management,
+    running a small business.
+    }
 
-\section{Experience}
-\cventry{2019--now}{DevOps Engineer}{\href{https://www.fexco.com/}{Fexco}}{Killorglin, Ireland (remotely)}{}{
-Member of the Hospitality solution DevOps team \newline{}
-\textbf{Responsibilities}:
-\begin{itemize}
-\item Development and maintenance of the
-\href{https://fexco.com/openconnect/hospitality/}{Hospitality solution}
-cloud infrastructure.
-\item Running the components of the solution (oncall, onduty, releases, deployments).
-\item Mentoring on good Site Reliability Engineering practices.
-\end{itemize}
-\textbf{Achievements}:
-\begin{itemize}
-\item Automated publication of the build artifacts.
-\item Designed and implemented a Terraform module that can perform a full
-environment creation and subsequent deployments without any manual steps.
-\item Built the infrastructure of the Merchant Portal - QA, UAT and production environments.
-\item Implemented a fully instrumented Firestore exports job (Golang).
-\item Designed and implemented an automatic Point in Time Recovery procedure (Firestore, Spanner).
-\item Establishing best practices: design documents, observability, instrumentation, SLOs.
-\item Successfully working and collaborating in a fully remote position.
-\end{itemize}
-}
-\cventry{2014--2019}{Site Reliability Engineer}{\href{https://www.google.com/}{Google}}{Dublin}{}{
-Member of the Access SRE team \newline{}
-\textbf{Responsibilities}:
-\begin{itemize}
-\item Tech Lead for the
-\href{https://www.usenix.org/system/files/login/articles/login\_fall17\_08\_escobedo.pdf}{BeyondCorp troubleshooting portal}.
-\item Running services implementing
-\href{https://cloud.google.com/beyondcorp/}{BeyondCorp} at
-Google (oncall, onduty, releases, deployments)
-\begin{itemize}
-\item root@Google - services that we run can impersonate
-any Googler / role account.
-\item Critical - if our services break, no work can be done in the company.
-\end{itemize}
-\item
-\href{https://landing.google.com/sre/sre-book/chapters/evolving-sre-engagement-model/}{SRE onboarding}
-of new services.
-\item measuring
-\href{https://landing.google.com/sre/sre-book/chapters/service-level-objectives/}{SLIs},
-negotiating SLAs and alerting on SLOs.
-\end{itemize}
-\textbf{Achievements}:
-\begin{itemize}
-\item BeyondCorp troubleshooting portal 
-\begin{itemize}
-\item
-Led the project from initial design, through development in a four person team,
-to a full launch and handover to a SWE team for maintenance.
-\item
-A globally replicated, load balanced RPC and HTTP service that has
-successfully undergone security, privacy and UX reviews.
-\item  Continuously integrated and continuously deployed.
-\item Over 30k lines of Golang code.
-\item Over 95\% code coverage in tests.
-\item
-Coordinated with multiple stakeholders (SecOps, technical support,
-ACL system owners, ACL data owners, UX engineers).
-\item
- I have written about it in a ;login:
-\href{https://www.usenix.org/publications/login/fall2017/escobedo}{article}.
-\end{itemize}
-\item SRE onboarded two services:
-\begin{itemize}
-\item
-the Google
-\href{https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44860.pdf}{device inventory}
-using Bigtable,
-\item the service mananging all of Google's network level ACLs.
-\end{itemize}
-\item Mentored multiple new team members and hosted two
-\href{https://careers.google.com/students/engineering-and-technical-internships/}{STEP} interns.
-\item
-Golang \href{https://sback.it/publications/icse2018seip.pdf}{Readability}
-certified in 3 months with no previous exposure to the language.
-\item
- Migrated a fleet of legacy HTTP proxies to a new set of machines
-spread across 3 continents without user impact.
-\item
-Shut down an old generation of the BeyondCorp
-\href{https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45728.pdf}{SSH gateways}
-(user communications and migration to a new solution,
-infrastructure decommission).
-\end{itemize}
-}
-\cventry{2012--2013}{Senior Software Performance Engineer}{\href{https://www.sabre.com}{Sabre Holdings}}{Kraków}{}{
-Member of the pLab team \newline{}
-\textbf{Responsibilities}:
-\begin{itemize}
-\item
-Designing and performing performance tests of
-core Sabre infrastructure components.
-\item
-Analyzing test results, determining performance bottlenecks and their causes.
-\item
-Supporting existing and building new testing automation tools.
-\item
-Communicating and coordinating efforts with teams
-on three continents on a daily basis.
-\item
-Establishing technology standards across pLab
-as a member of the ``standards committee''.
-\end{itemize}
-\textbf{Achievements}: Created a document templating framework for
-automated generation of test reports and other related documents.
-}
-\cventry{2003-2011}{Co-owner}{Tefnet}{Łódź}{}{
-Two person dream team \newline{}
-\textbf{Responsibilities}:
-\begin{itemize}
-\item
-Design, implementation, deployment and maintenance of
-open source based solutions.
-\item
-Management of customer relations,
-providing consulting services and support.
-\end{itemize}
-\textbf{Achievements}:
-\begin{itemize}
-\item
-A customized Debian system fully parameterized with a
-system wide configuration tree with intra-referencing and overlay
-capabilities. The default key database contained over 6400 keys at
-the end of 2011. We were maintaining our own Debian repository
-containing our software.
-\item
-A netbooted thin client system supporting audio,
-encryption, USB key authentication and session detachement.
-\item
-A suite of Linux services babysitting networks of
-Microsoft Windows workstations, supporting the whole
-lifecycle starting from an unassisted installation over network.
-\item A VM management system supporting KVM and LXC guests.
-\item
-A complete solution for offline vehicle tracking including gps
-logging, fuel level monitoring and video recording.
-\end{itemize}
-}
-\section{Education}
-\cventry{2003--2007}{Master's degree in Computer Science}{University of Łódź}{City}{ISCDED 5A}{
-\textbf{Achievements}:
-\begin{itemize}
-\item
-I am the author of the
-\href{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm/mach-sa1100/jornada720.c}{port}
-of Linux 2.6 for the HP Jornada 720 (as a part of the Jlime project), which is
-a subject of my master’s degree thesis.
-\item
-Conference lectures:
-``\href{http://web.archive.org/web/20080309040727/http://konferencja.sul.uni.lodz.pl:80/index.php?id=3}{Open Source and public education}'',
-``\href{http://web.archive.org/web/20051118183822/http://konferencja.sul.uni.lodz.pl:80/program.html}{Graphical terminals}``.
-\item
-Conducted the ``Internals of the Unix systems'' classes at the
-Department of Mathematics (one term).
-\end{itemize}
-}
+  \newpage
 
-\section{Languages}
-\cvitemwithcomment{English}{C1 - Proficient}{
-I have been working for companies based in the USA and Ireland for the last 8 years.}
-\cvitemwithcomment{Polish}{C2 - Proficient}{My native tongue.}
+  \section{Experience}
+
+    \cventry{2019--now}{DevOps Engineer}{\href{https://www.fexco.com/}{Fexco}}{Killorglin, Ireland (remotely)}{}{
+      Member of the Hospitality solution DevOps team \newline{}
+      \textbf{Responsibilities}:
+      \begin{itemize}
+        \item Development and maintenance of the
+        \href{https://fexco.com/openconnect/hospitality/}{Hospitality solution}
+        cloud infrastructure.
+        \item Running the components of the solution (oncall, onduty, releases, deployments).
+        \item Mentoring on good Site Reliability Engineering practices.
+      \end{itemize}
+      \textbf{Achievements}:
+      \begin{itemize}
+        \item Automated publication of the build artifacts.
+        \item Designed and implemented a Terraform module that can perform a full
+        environment creation and subsequent deployments without any manual steps.
+        \item Built the infrastructure of the Merchant Portal - QA, UAT and production environments.
+        \item Implemented a fully instrumented Firestore exports job (Golang).
+        \item Designed and implemented an automatic Point in Time Recovery procedure (Firestore, Spanner).
+        \item Establishing best practices: design documents, observability, instrumentation, SLOs.
+        \item Successfully working and collaborating in a fully remote position.
+      \end{itemize}
+    }
+
+    \cventry{2014--2019}{Site Reliability Engineer}{\href{https://www.google.com/}{Google}}{Dublin}{}{
+      Member of the Access SRE team \newline{}
+      \textbf{Responsibilities}:
+      \begin{itemize}
+        \item Tech Lead for the
+        \href{https://www.usenix.org/system/files/login/articles/login\_fall17\_08\_escobedo.pdf}{BeyondCorp troubleshooting portal}.
+        \item Running services implementing
+        \href{https://cloud.google.com/beyondcorp/}{BeyondCorp} at
+        Google (oncall, onduty, releases, deployments)
+        \begin{itemize}
+          \item root@Google - services that we run can impersonate
+          any Googler / role account.
+          \item Critical - if our services break, no work can be done in the company.
+        \end{itemize}
+        \item
+        \href{https://landing.google.com/sre/sre-book/chapters/evolving-sre-engagement-model/}{SRE onboarding}
+        of new services.
+        \item measuring
+        \href{https://landing.google.com/sre/sre-book/chapters/service-level-objectives/}{SLIs},
+        negotiating SLAs and alerting on SLOs.
+      \end{itemize}
+      \textbf{Achievements}:
+      \begin{itemize}
+        \item BeyondCorp troubleshooting portal 
+          \begin{itemize}
+          \item
+          Led the project from initial design, through development in a four person team,
+          to a full launch and handover to a SWE team for maintenance.
+          \item
+          A globally replicated, load balanced RPC and HTTP service that has
+          successfully undergone security, privacy and UX reviews.
+          \item  Continuously integrated and continuously deployed.
+          \item Over 30k lines of Golang code.
+          \item Over 95\% code coverage in tests.
+          \item
+          Coordinated with multiple stakeholders (SecOps, technical support,
+          ACL system owners, ACL data owners, UX engineers).
+          \item
+           I have written about it in a ;login:
+          \href{https://www.usenix.org/publications/login/fall2017/escobedo}{article}.
+        \end{itemize}
+        \item SRE onboarded two services:
+          \begin{itemize}
+          \item
+          the Google
+          \href{https://storage.googleapis.com/pub-tools-public-publication-data/pdf/44860.pdf}{device inventory}
+          using Bigtable,
+          \item the service mananging all of Google's network level ACLs.
+        \end{itemize}
+        \item Mentored multiple new team members and hosted two
+        \href{https://careers.google.com/students/engineering-and-technical-internships/}{STEP} interns.
+        \item
+        Golang \href{https://sback.it/publications/icse2018seip.pdf}{Readability}
+        certified in 3 months with no previous exposure to the language.
+        \item
+         Migrated a fleet of legacy HTTP proxies to a new set of machines
+        spread across 3 continents without user impact.
+        \item
+        Shut down an old generation of the BeyondCorp
+        \href{https://storage.googleapis.com/pub-tools-public-publication-data/pdf/45728.pdf}{SSH gateways}
+        (user communications and migration to a new solution,
+        infrastructure decommission).
+      \end{itemize}
+    }
+
+    \cventry{2012--2013}{Senior Software Performance Engineer}{\href{https://www.sabre.com}{Sabre Holdings}}{Kraków}{}{
+      Member of the pLab team \newline{}
+      \textbf{Responsibilities}:
+      \begin{itemize}
+        \item
+        Designing and performing performance tests of
+        core Sabre infrastructure components.
+        \item
+        Analyzing test results, determining performance bottlenecks and their causes.
+        \item
+        Supporting existing and building new testing automation tools.
+        \item
+        Communicating and coordinating efforts with teams
+        on three continents on a daily basis.
+        \item
+        Establishing technology standards across pLab
+        as a member of the ``standards committee''.
+      \end{itemize}
+      \textbf{Achievements}: Created a document templating framework for
+      automated generation of test reports and other related documents.
+    }
+
+    \cventry{2003-2011}{Co-owner}{Tefnet}{Łódź}{}{
+      Two person dream team \newline{}
+      \textbf{Responsibilities}:
+      \begin{itemize}
+        \item
+        Design, implementation, deployment and maintenance of
+        open source based solutions.
+        \item
+        Management of customer relations,
+        providing consulting services and support.
+      \end{itemize}
+      \textbf{Achievements}:
+      \begin{itemize}
+        \item
+        A customized Debian system fully parameterized with a
+        system wide configuration tree with intra-referencing and overlay
+        capabilities. The default key database contained over 6400 keys at
+        the end of 2011. We were maintaining our own Debian repository
+        containing our software.
+        \item
+        A netbooted thin client system supporting audio,
+        encryption, USB key authentication and session detachement.
+        \item
+        A suite of Linux services babysitting networks of
+        Microsoft Windows workstations, supporting the whole
+        lifecycle starting from an unassisted installation over network.
+        \item A VM management system supporting KVM and LXC guests.
+        \item
+        A complete solution for offline vehicle tracking including gps
+        logging, fuel level monitoring and video recording.
+      \end{itemize}
+    }
+
+  \section{Education}
+
+    \cventry{2003--2007}{Master's degree in Computer Science}{University of Łódź}{City}{ISCDED 5A}{
+      \textbf{Achievements}:
+      \begin{itemize}
+        \item
+        I am the author of the
+        \href{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm/mach-sa1100/jornada720.c}{port}
+        of Linux 2.6 for the HP Jornada 720 (as a part of the Jlime project), which is
+        a subject of my master’s degree thesis.
+        \item
+        Conference lectures:
+        ``\href{http://web.archive.org/web/20080309040727/http://konferencja.sul.uni.lodz.pl:80/index.php?id=3}{Open Source and public education}'',
+        ``\href{http://web.archive.org/web/20051118183822/http://konferencja.sul.uni.lodz.pl:80/program.html}{Graphical terminals}``.
+        \item
+        Conducted the ``Internals of the Unix systems'' classes at the
+        Department of Mathematics (one term).
+      \end{itemize}
+    }
+
+  \section{Languages}
+
+    \cvitemwithcomment{English}{C1 - Proficient}{
+    I have been working for companies based in the USA and Ireland for the last 8 years.}
+    \cvitemwithcomment{Polish}{C2 - Proficient}{My native tongue.}
 
 \end{document}
