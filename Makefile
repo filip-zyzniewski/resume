@@ -12,7 +12,7 @@ all: $(OUT)
 filip_zyzniewski.pdf: pii.tex
 
 view: $(OUT)
-	xpdf $(OUT)
+	open $(OUT)
 
 clean:
 	rm $(OUT) $(BASE).aux pii.aux $(BASE).log $(BASE).out

@@ -26,23 +26,23 @@
     \begin{itemize}
     \item Site Reliability Engineering
     \begin{itemize}
-    \item Responsible for services handling 0.6 million QPS, >100TB of data.
+    \item Responsible for services handling 0.6 million QPS, over 100TB of data.
     \item Responsible for services processing cardholder data.
     \item Oncall with a 5 minute response SLO.
-    \item Cloud deployments
-    (GCP, Kubernetes, \href{https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/}{borg}).
-    \item Monitoring and alerting.
-    \item Continuous deployment.
+    \item Cloud deployments (e.g. AWS, Kubernetes)
+    \item Monitoring and alerting (e.g. Prometheus, Grafana, AWS Cloudwatch, Opsgenie)
+    \item Continuous deployment (e.g. GitHub Actions with OIDC, Flux CD, Flagger).
     \item Change management.
     \item Performance engineering.
     \item Load balancing.
     \item Capacity planning.
     \item Data integrity: replication, redundancy, backups.
+    \item Infrastructure as code (e.g. Pulumi, Kustomize, Flux CD, Terraform, SOPS).
     \end{itemize}
     \item Software development
     \begin{itemize}
-    \item Languages: Go, Python, Bourne shell.
-    \item Version control: Git, Perforce.
+    \item Languages: Python, Bourne shell, Go.
+    \item Version control: Git.
     \item Unit testing, integration testing, continuous integration.
     \end{itemize}
     \item Operating systems: Linux (Debian).
@@ -51,7 +51,7 @@
     \cvitem{Social}{
     Working in a team (contributing, leadership, mentoring),
     establishing and maintaining good relationships with stakeholders across teams
-    (communication, negotiation), working in fully remote positions, public speaking.
+    (communication, negotiation, NVC), working in fully remote positions, public speaking.
     }
     \cvitem{Organizational}{
     Planning and execution of strategies,
@@ -112,11 +112,13 @@
       Member of the Access SRE team \newline{}
       \textbf{Responsibilities}:
       \begin{itemize}
-        \item Tech Lead for the
-        \href{https://www.usenix.org/system/files/login/articles/login\_fall17\_08\_escobedo.pdf}{BeyondCorp troubleshooting portal}.
+        \item Head of the
+        \href{https://www.usenix.org/system/files/login/articles/login\_fall17\_08\_escobedo.pdf}{BeyondCorp troubleshooting portal}
+        project.
         \item Running services implementing
         \href{https://cloud.google.com/beyondcorp/}{BeyondCorp} at
-        Google (oncall, onduty, releases, deployments)
+        Google (oncall, onduty, releases, deployments) on
+        \href{https://kubernetes.io/blog/2015/04/borg-predecessor-to-kubernetes/}{borg}.
         \begin{itemize}
           \item root@Google - services that we ran could impersonate
           any Googler / role account.
@@ -126,7 +128,9 @@
         \href{https://landing.google.com/sre/sre-book/chapters/evolving-sre-engagement-model/}{SRE onboarding}
         of new services.
         \item measuring
-        \href{https://landing.google.com/sre/sre-book/chapters/service-level-objectives/}{SLIs},
+        \href{https://landing.google.com/sre/sre-book/chapters/service-level-objectives/}{SLIs}
+        using \href{https://en.wikipedia.org/wiki/Prometheus_(software)\#History}{borgmon}
+        and \href{https://research.google/pubs/monarch-googles-planet-scale-in-memory-time-series-database/}{Monarch},
         negotiating SLAs and alerting on SLOs.
       \end{itemize}
       \textbf{Achievements}:
@@ -140,7 +144,8 @@
           A globally replicated, load balanced RPC and HTTP service that has
           successfully undergone security, privacy and UX reviews.
           \item  Continuously integrated and continuously deployed.
-          \item Over 30k lines of Golang code.
+          \item Over 30k lines of Golang code maintained in
+          \href{https://en.wikipedia.org/wiki/Piper_(source_control_system)}{Piper}.
           \item Over 95\% code coverage in tests.
           \item
           Coordinated with multiple stakeholders (SecOps, technical support,
